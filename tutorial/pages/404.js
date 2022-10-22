@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 
 const Errorpage = () => (
     <>
@@ -11,7 +11,9 @@ const Errorpage = () => (
         <p>
             The page you are looking for might have been removed or, temporarily unavailable.
         </p>
-        <a href="home">Back to Home page</a>
+        <Link href="home">
+        <a>Back to Home page</a>
+        </Link>
         </div>
         </div>
     </>
