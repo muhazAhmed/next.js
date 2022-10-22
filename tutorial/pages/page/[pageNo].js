@@ -5,7 +5,7 @@ const pageNo = () =>{
   const pageNumber = router.query.pageNo
     return (
       <>
-        <h1>Hello,this is {pageNumber}'th page!</h1>
+        <h1>Hello,this is {pageNumber}'th page! </h1>
       </>
     )
   }
