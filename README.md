@@ -1,25 +1,36 @@
-#Dynamic Routing.
+# next.js
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-![Screenshot (17)](https://user-images.githubusercontent.com/109068603/197341171-96275ced-cb84-48da-97ea-296618017914.png)
+First, run the development server:
 
-How to create dynamic routes in Next.js
-As mentioned in the tutorial on static routing, Next.js defines routes based on the concept of pages.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-What does that mean? Every Next.js project comes with a pages folder. The structure of the pages folder determines the structure of your routes and every file inside that folder maps to a route in your application.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Essentially, every time you want to create a route, you need to add a file in the pages folder. Keep in mind that the pages folder itself represents your root url (meaning /).
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 For static routing, you can create a new route by adding a index.js or a named file like pageNo.js, and give your file name.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-pages/[pageNo].js maps to /pageNumber
+## Learn More
 
-Tip: For more info on how to create static routes (including nested routes), read my tutorial on static routing in Next.js.
+To learn more about Next.js, take a look at the following resources:
 
-But how does it work for dynamic routes? Say I wanted to create a blog, how would I add a route such as myblog.com/posts/:id?
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Next.js handles dynamic routes by supporting brackets around parameters (e.g [id]) as a filename. Going back to my blog example, I would therefore create a [id].js file inside my posts folder.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-As a result, /pages/posts/[id].js would map to /posts/[id] where id is the unique id of your post.
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
