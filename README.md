@@ -1,5 +1,8 @@
 #Dynamic Routing.
 
+
+![Screenshot (17)](https://user-images.githubusercontent.com/109068603/197341171-96275ced-cb84-48da-97ea-296618017914.png)
+
 How to create dynamic routes in Next.js
 As mentioned in the tutorial on static routing, Next.js defines routes based on the concept of pages.
 
