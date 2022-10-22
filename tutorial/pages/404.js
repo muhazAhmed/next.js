@@ -12,7 +12,10 @@ const Errorpage = () => (
             The page you are looking for might have been removed or, temporarily unavailable.
         </p>
         <Link href="home">
-        <a>Back to Home page</a>
+        <a>Back to Home page</a>  
+
+        {/* you can do without link with old method (<a href ="") but this link will help us to load pg without refreshing */}
+        
         </Link>
         </div>
         </div>
