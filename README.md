@@ -1,4 +1,5 @@
-File-Based Routing
+#File-Based Routing.
+
 While using react, we need to install a third-party package to get the routing
 
 Next.js comes built-in with an incredible feature called file-based routing. This feature enables Nextjs developers to simply create files inside the pages folder and those files will serve as routes for the application. For example, if you create 3 files (about.js, contact.js, and index.js) inside the pages folder of your Next.js application, you can view these components by visiting localhost:3000/about, localhost:3000/contact, and localhost:3000/ respectively.
