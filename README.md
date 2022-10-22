@@ -10,7 +10,7 @@ What does that mean? Every Next.js project comes with a pages folder. The struct
 
 Essentially, every time you want to create a route, you need to add a file in the pages folder. Keep in mind that the pages folder itself represents your root url (meaning /).
 
-For static routing, you can create a new route by adding a index.js or a named file like pageNo.js.
+For static routing, you can create a new route by adding a index.js or a named file like pageNo.js, and give your file name.
 
 
 pages/[pageNo].js maps to /pageNumber
