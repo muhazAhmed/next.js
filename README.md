@@ -1,19 +1,25 @@
-#Css Module
+#Image Component
 
-<External/Internal CSS>
-In Next.js we can't apply external css like usual. 
-In order to achive that, there are few things to keep in mind.
+As stated in the official documentation, next/image offers everything required to deal with Next.js images as expected on the modern web. Specifically, it comes with an extension of the HTML <img> element, represented by a standalone <Image /> component. This was developed with the Core Web Vitals scores in mind, which are an important measurement of user experience and are factored into the Google search rankings. 
 
-a> We can use globals.css file to apply css for any pages. But if you feel like it will look pretty long then you can go with external css also.
-b> For using external css, we need to follow few rules :
-    <> file name should be [fileName].module.css ....(eg: main.module.css).
-    <> you need to import that file with any variable name (eg : import style from '../styles/main.module.css').
-    <> We cant use main tags of html for css. It should have className or id. (eg : h1 {will throw error}...h1 className = { will work fine}>)
-    <> In order to use those css, we need to call that variable in every classname and id (eg : <div className = {style.header}>)
-    <> if you have multiple classname in same line, then you have to use that variable evrytime for each className with $.
-            (eg : div className = `${style.container} ${style.btn}`>) 
+But thanks to the <Image> component, you do not have to worry about them. This is because it comes with several built-in performance optimizations to help you achieve high Core Web Vitals scores.
 
- 
+How To Use the Next.js Image Component :
 
-<Inline CSS>
-Inline CSS is same as usual (eg : h1 style = {{color : "red"}}> hello world </h1> )
+First, you must be sure that your version of Next.js is greater or equal to 10. This is the only prerequisite required. That assured, you will be able to import the <Image /> component as follows:
+
+import Image from 'next/image'
+Then, you must give a value to the props below:
+
+src: it can be either a statically imported image file or a path string. In the latter case, if you want to use absolute external URLs, you must add their domains in the next.config.js file as shown here:
+
+module.exports = {
+  images: {
+    domains: [
+        'external-domain-1.com',
+        'external-domain-2.com'
+    ],
+  },
+}
+
+Note : Its importent to mention height and width of the image as shown in the code.
