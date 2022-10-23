@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import { useEffect } from "react";
+import styles from '../styles/404.module.css'
 
 const Errorpage = () => {
     const router = useRouter();
@@ -11,7 +12,7 @@ const Errorpage = () => {
     useEffect(() =>{
         setTimeout(() => {
             router.push("home")
-        },3000)
+        },4000)
     }, []);
 
     return(
@@ -22,7 +23,7 @@ const Errorpage = () => {
         <div className="notfound-404">
             <h1>404</h1>
         </div>
-        <h2>We are sorry, Page not found !</h2>
+        <h2>We are sorry, <span className= {styles.span}>Page not found !</span></h2>
         <p>
             The page you are looking for might have been removed or, temporarily unavailable.
         </p>
